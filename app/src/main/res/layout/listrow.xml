@@ -4,62 +4,37 @@
     style="@style/Base.TextAppearance.AppCompat.Title">
 
     <TextView
-        android:text="Date:"
+        android:text="Date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="11dp"
-        android:id="@+id/dateShow"
-        style="@style/TextAppearance.AppCompat.Title" />
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/dateShow"
-        android:layout_toEndOf="@+id/dateShow"
         android:layout_marginStart="15dp"
         android:id="@+id/date"
-        style="@style/Base.TextAppearance.AppCompat.Title" />
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium" />
 
     <TextView
-        android:text="Temp:"
+        android:text="temperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:id="@+id/tempshow"
-        android:layout_below="@+id/dateShow"
-        style="@style/TextAppearance.AppCompat.Title"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:text="Description:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tempshow"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="21dp"
-        style="@style/TextAppearance.AppCompat.Title"
-        android:id="@+id/descShow" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/TextAppearance.AppCompat.Title"
+        style="@style/Base.TextAppearance.AppCompat.SearchResult.Title"
         android:id="@+id/temp"
-        android:layout_alignBaseline="@+id/tempshow"
-        android:layout_alignBottom="@+id/tempshow"
-        android:layout_toEndOf="@+id/tempshow" />
+        android:textSize="30sp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="cursive" />
 
     <TextView
-        android:text="TextView"
+        android:text="descrption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/desc"
-        style="@style/TextAppearance.AppCompat.Title"
-        android:layout_alignBaseline="@+id/descShow"
-        android:layout_alignBottom="@+id/descShow"
-        android:layout_toEndOf="@+id/descShow" />
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_alignBottom="@+id/temp"
+        android:layout_alignStart="@+id/date"
+        android:textAppearance="@android:style/TextAppearance.Material.Small" />
+
 </RelativeLayout>
