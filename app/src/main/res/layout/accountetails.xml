@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:facebook="http://schemas.android.com/tools">
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilepic"
+        android:layout_alignParentTop="true"
+
+        facebook:preset_size="normal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        style="@style/com_facebook_button"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/profilepic"
+        android:layout_toEndOf="@+id/profilepic" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilename"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:textColor="@color/cardview_dark_background"
+
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/profilepic"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        style="@style/com_facebook_button"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/profilepic"
+        android:layout_toEndOf="@+id/profilepic" />
+
+    <Button
+        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        style="@style/com_facebook_button"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/profilepic"
+        android:layout_toEndOf="@+id/profilepic" />
+
+    <Button
+        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        style="@style/com_facebook_button"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/profilepic"
+        android:layout_toEndOf="@+id/profilepic" />
+
+    <Button
+        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        style="@style/com_facebook_button"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/profilepic"
+        android:layout_toEndOf="@+id/profilepic" />
+
+    <Button
+        android:text="GetWeatherData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getdata"
+        android:layout_marginStart="31dp"
+        style="@style/com_facebook_button"
+        android:layout_alignBaseline="@+id/logout"
+        android:layout_alignBottom="@+id/logout"
+        android:layout_toEndOf="@+id/logout" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/logout"
+        android:id="@+id/myList" />
+
+</RelativeLayout>
